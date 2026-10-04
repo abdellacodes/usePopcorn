@@ -1,7 +1,8 @@
 // import { useState } from "react"
 // import StarRating from "./StarRating"
 
-import TextExpander from "./TextExpander";
+import TestingDataFetch from "./TestingDataFetch";
+// import TextExpander from "./TextExpander";
 
 export default function App() {
   //  const [movieRating,setMovieRating] = useState(0)
@@ -9,9 +10,14 @@ export default function App() {
     // console.log(movieRating)
   return (
     <div>
-      <p>This is the test for expanding and minimizing the text test component</p>
+
+
+      <TestingDataFetch/>
+
+
+      {/* <p>This is the test for expanding and minimizing the text test component</p>
       
-       <TextExpander/>
+       <TextExpander/> */}
 
       {/* <p>this is the test for rating components</p>
       <StarRating
