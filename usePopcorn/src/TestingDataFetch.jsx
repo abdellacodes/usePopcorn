@@ -11,14 +11,14 @@ export default function TestingDataFetch() {
       try {
         setIsLoading(true);
         const res = await fetch(
-          `http://www.omdbapi.com/?i=tt3896198&apikey=${apikey}s={harry}`,
+          `https://www.omdbapi.com/?t=harry&apikey=a1acd6fb`,
         );
         const data = await res.json();
-        if (!data.ok) {
+        if (!res.ok) {
           throw new Error("there is error in fetching data");
         }
         if (data.Response == "False")
-          throw new Error("there is error in fetching data");
+          throw new Error("data not found in the api");
 
         setMovieData(data);
       } catch (err) {
@@ -33,7 +33,12 @@ export default function TestingDataFetch() {
   return (
     <div>
       {isloading && <p>Loading</p>}
-      {!isloading && !error && <p>the movies </p>}
+      {!isloading && !error && (
+        <p>
+          {movieData.Title}
+          {movieData.Actors}
+        </p>
+      )}
       {error && <p>{error}</p>}
     </div>
   );
