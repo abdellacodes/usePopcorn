@@ -1,0 +1,12 @@
+learn about what is effects
+
+event handler is event when 
+
+here i understand something between event handeler and using sideefects like use effect hook
+
+event handeler is a function excute when some event happen or call the function 
+
+the side effect is or using useeffect is a hook it has inside function so i call it handler function inside the useeffect so
+
+what is their main defference is ?
+is the useeffect handel the exeternal sycronyzation or what is?
